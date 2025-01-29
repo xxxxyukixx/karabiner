@@ -1,0 +1,79 @@
+{
+  "title": "コントロールと矢印でタブ移動",
+  "rules": [
+      {
+          "description": "左方向、右方向",
+          "manipulators": [
+              {
+                  "type": "basic",
+                  "from": {
+                      "key_code": "left_arrow",
+                      "modifiers": {
+                          "mandatory":["left_control"],
+                          "optional": ["any"]
+                      }
+                  },
+                  "to": [
+                      {
+                        "key_code": "close_bracket",
+                        "modifiers": [ "left_command", "right_shift" ]
+                      }
+                  ]
+              },
+              {
+                "type": "basic",
+                "from": {
+                    "key_code": "right_arrow",
+                    "modifiers": {
+                        "mandatory":["left_control"],
+                        "optional": ["any"]
+                    }
+                },
+                "to": [
+                    {
+                      "key_code": "backslash",
+                      "modifiers": [ "left_command", "right_shift" ]
+                    }
+                ]
+            }
+          ]
+      },
+      {
+        "description": "左方向、右方向",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "left_arrow",
+                    "modifiers": {
+                        "mandatory":["left_control"],
+                        "optional": ["any"]
+                    }
+                },
+                "to": [
+                    {
+                      "key_code": "close_bracket",
+                      "modifiers": [ "left_command", "right_shift" ]
+                    }
+                ]
+            },
+            {
+              "type": "basic",
+              "from": {
+                  "key_code": "right_arrow",
+                  "modifiers": {
+                      "mandatory":["left_control"],
+                      "optional": ["any"]
+                  }
+              },
+              "to": [
+                  {
+                    "key_code": "backslash",
+                    "modifiers": [ "left_command", "right_shift" ]
+                  }
+              ]
+          }
+        ]
+    }
+  ]
+}
